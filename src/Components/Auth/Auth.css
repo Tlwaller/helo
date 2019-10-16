@@ -1,0 +1,66 @@
+#auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff617c), to(#ffff77));
+  background-image: linear-gradient(to right, #ff617c, #ffff77);
+}
+
+#auth .auth-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 520px;
+  width: 447px;
+  border-radius: 7px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px 0px, rgba(0, 0, 0, 0.26) 0px 10px 10px 0px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px 0px, rgba(0, 0, 0, 0.26) 0px 10px 10px 0px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff617c), to(#ffff77));
+  background-image: linear-gradient(to right, #ff617c, #ffff77);
+  line-height: 1px;
+}
+
+#auth .auth-container img {
+  height: 100px;
+  width: 100px;
+}
+
+#auth .auth-container .title {
+  font-size: 8.5ch;
+}
+
+#auth .auth-container .auth-btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+}
+
+#auth .auth-container .auth-btns-container .auth-btns {
+  height: 35px;
+  width: 70px;
+  background-color: #464646;
+  color: white;
+  border-style: none;
+}
+/*# sourceMappingURL=Auth.css.map */

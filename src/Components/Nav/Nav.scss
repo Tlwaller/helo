@@ -1,0 +1,26 @@
+nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgb(255, 181, 121), rgb(255, 122, 144));
+    height: 100vh;
+    width: 120px;
+
+    .logout {
+        margin-bottom: 20px;
+    }
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .top-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 300px;
+    }
+}
