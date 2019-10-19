@@ -3,7 +3,8 @@ const express = require('express');
 const session = require('express-session');
 const massive = require('massive');
 const app = express();
-const controller = require('./controller');
+const AuthController = require('./Controllers/AuthController');
+const PostController = require('./Controllers/PostController');
 
 const {SERVER_PORT, CONNECTION_STRING, SESSION_SECRET} = process.env;
 
@@ -23,9 +24,14 @@ massive(CONNECTION_STRING).then(db => {
 })
 
 //auth
-app.post('/auth/register', controller.register);
-app.post('/auth/login', controller.login);
-app.get('/auth/user', controller.getUser);
-app.post('/auth/logout', controller.logout)
+app.post('/auth/register', AuthController.register);
+app.post('/auth/login', AuthController.login);
+app.get('/auth/user', AuthController.getUser);
+app.post('/auth/logout', AuthController.logout);
+
+//posts
+app.post('/api/posts', PostController.createPost);
+app.get('/api/posts', PostController.getPosts);
+app.get('/api/post/:post_id', PostController.getPostsById);
 
 app.listen(SERVER_PORT, () => console.log('Listening on port', SERVER_PORT));
