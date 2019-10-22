@@ -32,6 +32,7 @@ app.post('/auth/logout', AuthController.logout);
 //posts
 app.post('/api/posts', PostController.createPost);
 app.get('/api/posts', PostController.getPosts);
-app.get('/api/post/:post_id', PostController.getPostsById);
+app.get('/api/post/post_id', PostController.getPostsById);
+app.get("/api/posts/userposts", getPostsByTitle);
 
 app.listen(SERVER_PORT, () => console.log('Listening on port', SERVER_PORT));

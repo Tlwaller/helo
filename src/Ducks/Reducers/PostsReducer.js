@@ -17,10 +17,10 @@ export function getAllPosts() {
     };
 }
 
-export function searchPosts(query) {
+export function searchPosts(searchTitle) {
     return {
         type: SEARCH_POSTS,
-        payload: axios.get(`/api/posts/posts?username=${query}`)
+        payload: axios.get(`/api/posts/userposts?title=${searchTitle}`)
     };
 }
 
